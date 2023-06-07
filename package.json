@@ -1,9 +1,12 @@
 {
   "name": "twitterclone",
   "version": "0.1.0",
+  "homepage": "https://gitname.github.io/react-gh-pages",
   "private": true,
   "scripts": {
     "build": "next build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "postinstall": "prisma generate",
     "lint": "next lint",
@@ -36,6 +39,7 @@
     "autoprefixer": "^10.4.14",
     "eslint": "^8.40.0",
     "eslint-config-next": "^13.4.2",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.21",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.2.8",
